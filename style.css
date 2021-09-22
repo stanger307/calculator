@@ -1,0 +1,66 @@
+:root {
+    --gray: #aaa;
+    --black: #111;
+    --calc: rgba(46, 40, 40, 0.514);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--gray);
+    color: var(--black);
+}
+
+#calc {
+    text-align: center;
+    width: 325px;
+    height: 300px;
+    margin: 5% auto;
+    padding: 33px 25px;
+    background-color: crimson;
+    border-radius: 30px;
+}
+
+.top .clear {
+    float: left;
+}
+
+.top .screen {
+    height: 40px;
+    width: 200px;
+    float: right;
+    padding: 0 10px;
+    background: var(--calc);
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 40px;
+    color: white;
+    text-align: right;
+    letter-spacing: 1px;;
+}
+
+.keys, .top {overflow: hidden}
+
+.keys span, .top span.clear {
+    float: left;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+    width: 66px;
+    height: 36px;
+    background: var(--calc);
+    border-radius: 20px;
+    margin: 0 2px 12px 0;
+    color: white;
+    line-height: 36px;
+    user-select: none;
+    transform: all 0.2s ease;
+}
+.keys span:hover, .top span:hover {
+    background: var(--gray);
+}
+
