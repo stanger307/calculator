@@ -2,9 +2,6 @@ const operators = ['+', '-', 'x', '%'];
 const input = document.querySelector('.screen');
 const keys = document.querySelectorAll('#calc span');
 
-let entry = false;
-
-
 function check(e) {
     let btnValue = this.innerHTML;
     
@@ -20,9 +17,9 @@ function check(e) {
             input.innerText += btnValue;
         }
     }
-
-
 }
+
 keys.forEach(key => {
-    key.addEventListener('click', check)
+    key.addEventListener('click', check);
 });
+
